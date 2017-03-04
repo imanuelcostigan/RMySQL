@@ -2,8 +2,8 @@
 % Please edit documentation in R/connect.R
 \docType{methods}
 \name{dbConnect,MySQLDriver-method}
-\alias{MySQL}
 \alias{dbConnect,MySQLDriver-method}
+\alias{MySQL}
 \title{Connect/disconnect to a MySQL DBMS}
 \usage{
 \S4method{dbConnect}{MySQLDriver}(drv, dbname = NULL, username = NULL,
@@ -19,10 +19,10 @@ MySQL(max.con = 16, fetch.default.rec = 500)
 "MySQL" or an \code{MySQLConnection}.}
 
 \item{dbname}{string with the database name or NULL. If not NULL, the
-connection sets the default daabase to this value.}
+connection sets the default database to this value.}
 
 \item{username, password}{Username and password. If username omitted,
-defaults to the current user. If password is ommitted, only users
+defaults to the current user. If password is omitted, only users
 without a password can log in.}
 
 \item{host}{string identifying the host machine running the MySQL server or
@@ -107,4 +107,3 @@ dbRemoveTable(con, "USArrests")
 dbDisconnect(con)
 }
 }
-
